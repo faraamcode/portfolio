@@ -25,6 +25,7 @@
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-blue-1: rgb(25, 118, 210);
   --clr-white: #fff;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
@@ -109,8 +110,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  background: var(--clr-blue-1);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -124,8 +125,8 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
+  background: var(--clr-blue-1);
+  color: var(--clr-white);
 }
 img {
   width: 100%;
@@ -164,6 +165,9 @@ HOME DESIN
 ==========
 
 */
+.description-container {
+  position: relative;
+}
 
 .section-home {
   width: 100vw;
@@ -174,6 +178,19 @@ HOME DESIN
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* text part */
+.social-links-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.social-icon-img {
+  width: 3rem;
+  height: 3rem;
 }
 /* Image part */
 .picture-and-design-container {

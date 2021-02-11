@@ -20,6 +20,13 @@ const [more, setMore] = useState(false);
         <p>{more ? info : info.slice(0, 100)}</p>
         <button onClick = {()=> setMore(!more)} className="btn">{more ? "hide" : "readmore"}</button>
        </article>
+       <div className="social-links-container">
+         <img src="/images/github.svg" class="social-icon-img" alt=""/>
+         <img src="/images/linkedin.svg" class="social-icon-img" alt=""/>
+         <img src="/images/twitter.svg" class="social-icon-img" alt=""/>
+         <img src="/images/facebook.svg" class="social-icon-img" alt=""/>
+         <img src="/images/gmail.svg" class="social-icon-img" alt=""/>
+       </div>
      </div>
      <div className="picture-and-design-container">
        <div className="main-image-container-1">
