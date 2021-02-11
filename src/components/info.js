@@ -1,4 +1,4 @@
-export const info = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur similique commodi repudiandae odit? Quasi aspernatur quam esse at recusandae culpa, officia officiis maxime molestiae error cupiditate minus placeat quibusdam commodi animi facilis aut quo soluta ad tempora, a fuga distinctio. Rerum voluptate voluptatem repellendus, facere animi tempore officia nam numquam.';
+export const info = 'Innovative tech mind with  years of experience working as a computer programmer. Capable of working with a variety of technology and software solutions,and managing databases.Valuable team member who has experience diagnosing problems and developing solutions.';
 
 export const projects = [
  {

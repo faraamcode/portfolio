@@ -2,13 +2,15 @@
  import {info} from './info'; 
  function Home(){
 const github = 'https://api.github.com/users/faraamcode';
+const [userImage, setUserImage] = useState("");
+const [more, setMore] = useState(false);
 const getUser = async()=>{
   const user = await fetch(github);
   const response = await user.json();
-  setUserImage(response.avatar_url)
+   
+   return setUserImage(response.avatar_url)
+  
 }
-const [userImage, setUserImage] = useState(getUser());
-const [more, setMore] = useState(false);
  
   return (
    <section className="section-home">

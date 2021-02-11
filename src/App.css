@@ -144,6 +144,11 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+.nav-logo {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+}
 .nav-links {
   list-style: none;
   display: grid;
@@ -179,7 +184,9 @@ HOME DESIN
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.description-container h1 {
+  margin-top: 5rem;
+}
 /* text part */
 .social-links-container {
   display: grid;
