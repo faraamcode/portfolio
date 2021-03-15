@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom';
 import {AiFillContacts} from 'react-icons/ai'
 import {FiUser} from 'react-icons/fi'
+import {FaBars, FaTimes} from 'react-icons/fa'
+
 
 import {GrProjects} from 'react-icons/gr'
 function Navbar(){
@@ -14,7 +16,7 @@ function Navbar(){
      </div>
      <ul className="nav-links">
       <Link to="/" className="link-route">
-      <li className="link" className="link-route"><FiUser className="navbar-icon"/>about</li>
+      <li className="link"><FiUser className="navbar-icon"/>about</li>
       </Link>
       <Link to="/" className="link-route">
       <li className="link"> <GrProjects className="navbar-icon"/>projects</li>
@@ -22,9 +24,21 @@ function Navbar(){
       <Link to="/" className="link-route">
       <li className="link"><AiFillContacts className="navbar-icon"/>contact me</li>
       </Link>
-      <li className="link"></li>
-      <li className="link"></li>
-      <li className="link"></li>
+     </ul>
+     <FaBars className="menu-logo"/>
+    </div>
+    <div className ="sidebar">
+    <FaTimes className="close-btn"/>
+    <ul className="sidebar-links">
+      <Link to="/" >
+      <li className=""><FiUser className="navbar-icon"/>about</li>
+      </Link>
+      <Link to="/" className="link-route">
+      <li className="link"> <GrProjects className="navbar-icon"/>projects</li>
+      </Link>
+      <Link to="/" className="link-route">
+      <li className=""><AiFillContacts className="navbar-icon"/>contact me</li>
+      </Link>
      </ul>
     </div>
    </section>

@@ -16,8 +16,8 @@ const getUser = async()=>{
    <section className="section-home">
     <div className="home-container">
      <div className="description-container">
-       <h1>Hello, I am</h1>
-       <h2>Ibrahim abdulrasaq</h2>
+       <h2>Hello, I am</h2>
+       <h1>Ibrahim abdulrasaq</h1>
        <article className="personal-info">
         <p>{more ? info : info.slice(0, 100)}</p>
         <button onClick = {()=> setMore(!more)} className="btn">{more ? "hide" : "readmore"}</button>
