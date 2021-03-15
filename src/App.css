@@ -136,6 +136,9 @@ img {
 .section-nav {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  border-bottom: 1px solid var(--clr-grey-9);
+  /* box-shadow: var(--dark-shadow); */
 }
 .navbar {
   width: 90vw;
@@ -144,24 +147,44 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+.logo-container{
+display: flex;
+align-items: center;
+}
+.logo-container h6{
+  font-size: 1rem;
+  text-transform: capitalize;
+}
 .nav-logo {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   object-fit: cover;
 }
 .nav-links {
+  justify-self: end;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap:2rem ;
 }
 .nav-links li {
   text-transform: capitalize;
+  color: var(--clr-grey-1);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
 }
 .App {
   text-align: center;
 }
 .link-route {
   text-decoration: none;
+}
+.navbar-icon{
+  /* font-size: 1.5rem; */
+  margin-bottom: 0;
 }
 
 /* 
