@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Navbar';
 import Homecontent from './components/Home';
-import About from './components/About';
+import About from './components/About.jsx';
 import Contacts from './components/Contact';
 import Project from './components/Project';
 import Services from './components/Services';

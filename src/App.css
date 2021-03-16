@@ -383,3 +383,94 @@ HOME DESIN
 .bottom-1 {
   justify-self: end;
 }
+/* 
+=================
+ABOUT
+=================
+ */
+ .about-section{
+   width: 90vw;
+   height: 100vh;
+   /* background: red; */
+   margin: 0 auto;
+ }
+ .section-title {
+   margin-top: 3rem;
+   font-size: 3rem;
+
+   text-transform: uppercase;
+   margin-left: 0;
+   text-align: center;
+ }
+ .about-info p{
+   text-align: center;
+ }
+ .about-image{
+   position: relative;
+   max-width: 20rem;
+  margin: 3rem auto;
+
+ }
+ .about-image::before{
+   position: absolute;
+   top: 1.5rem;
+   left: 1.5rem;
+   width: 100%;
+   height: 100%;
+   content: " ";
+   border-radius: 6px;
+   border: 5px solid var(--clr-grey-1);
+   /* background-color: red; */
+   z-index: -1;
+ }
+ .about-stack h5{
+   font-size: 2rem;
+   /* text-align: center; */
+   text-transform: uppercase;
+   text-decoration: underline;
+ }
+ .about-stack{
+   /* background: red; */
+  align-self: center;
+   justify-self: center;
+   display: grid;
+   justify-content: center;
+
+
+}
+.stack-lists{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+margin-top: .7rem;
+ }
+ .stack-lists li{
+   display: flex;
+   flex-direction: row;
+   font-size: 1.5rem;
+   /* justify-content: center; */
+   align-items: center;
+   text-transform: uppercase;
+   
+ }
+.about-info{
+  margin: auto auto;
+  max-width: 30rem;
+}
+.stack-item{
+  margin-right: 1rem;
+}
+ @media screen and (min-width: 765px){
+   .section-container{
+     display: grid;
+     grid-template-columns:  1fr 1fr;
+     /* justify-items: center; */
+     justify-content: center;
+     /* align-content: center; */
+     /* align-items: center; */
+   }
+ .about-stack{
+   justify-self: flex-end;
+ }
+  
+ }
