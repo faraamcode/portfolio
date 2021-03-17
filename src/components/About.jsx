@@ -18,7 +18,7 @@ import {SiJavascript} from 'react-icons/si'
 
      </div>
      <div className="about-image">
-       <img src="https://avatars.githubusercontent.com/u/74251119?v=4" alt=""/>
+       <img src="/images/rasaq.jpg" alt=""/>
      </div>
      <div className="about-stack">
        <h5>my stack</h5>

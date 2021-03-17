@@ -54,6 +54,7 @@ const getUser = async()=>{
      </div>
     </div>
    </section>
+   
   );
  }
 
