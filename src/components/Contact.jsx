@@ -51,15 +51,30 @@ function Contact(){
         <form  onSubmit={handleSubmit} className="form-container">
           <div className="form-control-container">
               <label htmlFor="">name</label>
-          <input type="text" name="name" id="" className="form-input" placeholder="enter your name"/>
+          <input type="text" name="name" id="name" className="form-input" placeholder="enter your name"/>
+          <ValidationError 
+        prefix="Name" 
+        field="name"
+        errors={state.errors}
+      />
           </div>
           <div className="form-control-container">
               <label htmlFor="">email</label>
-          <input type="text" name="email" id="" className="form-input" placeholder="enter your email"/>
+          <input type="text" name="email" id="email" className="form-input" placeholder="enter your email"/>
+          <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
           </div>
           <div className="form-control-container">
               <label htmlFor="">message</label>
-          <textarea name="" id="" cols="30" rows="10" className="form-control" placeholder="type your message..."></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" className="form-control" placeholder="type your message..."></textarea>
+          <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
           </div>
           <div className="form-control-container">
               <button type="submit" disabled={state.submitting} className="submit-btn btn">send</button>

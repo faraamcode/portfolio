@@ -23,10 +23,12 @@ const closeSidebar = ()=>{
   return (
    <section className="section-nav">
     <div className="navbar">
+    <Link to="/">
      <div className="logo-container">
       <img src="/images/logo.png" alt="" className="nav-logo"/>
       <h6>Ibrahim Abdulrasaq</h6>
      </div>
+    </Link>
      <ul className="nav-links">
       <Link to="/about" className="link-route">
       <li className="link"><FiUser className="navbar-icon"/>about</li>
