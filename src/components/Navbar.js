@@ -34,7 +34,7 @@ const closeSidebar = ()=>{
       <Link to="/projects" className="link-route">
       <li className="link"> <GrProjects className="navbar-icon"/>projects</li>
       </Link>
-      <Link to="/" className="link-route">
+      <Link to="/contact" className="link-route">
       <li className="link"><AiFillContacts className="navbar-icon"/>contact me</li>
       </Link>
      </ul>

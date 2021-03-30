@@ -573,3 +573,51 @@ PROJECTS
   margin-bottom:1rem ;
   
 }
+.section-contacts{
+  width: 85vw;
+  max-width: 40rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
+}
+.section-contacts p{
+  text-align: center;
+  /* display: block; */
+}
+.social-contact{
+  margin: 2rem auto;
+
+  display: flex;
+}
+.social-contact img{
+  /* padding: 1rem; */
+  margin: .4rem;
+  width: 3rem;
+  height: 3rem;
+}
+.form-container{
+display: flex;
+flex-direction: column;
+}
+.form-control-container{
+  flex-direction: column;
+  display: flex;
+  margin-top: 1rem;
+}
+.form-control-container label{
+  text-transform: capitalize;
+}
+.form-input{
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.form-control{
+  padding:1rem ;
+  width: 30rem;
+  height: 10rem;
+  font-size: 1rem;
+}

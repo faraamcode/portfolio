@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Navbar';
 import Homecontent from './components/Home';
 import About from './components/About.jsx';
-import Contacts from './components/Contact';
+import Contacts from './components/Contact.jsx';
 import Services from './components/Services';
 import Footer from './components/footer.jsx'
 import Projects from './components/projects'
