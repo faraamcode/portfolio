@@ -1,10 +1,26 @@
+import react from "react"
+import {Link} from "react-router-dom"
+import { useForm, ValidationError } from '@formspree/react';
 function Contact(){
+    const [state, handleSubmit] = useForm("xayawzkq");
 
     return (
         <section className="about-section">
         <div className="section-title">
            My contacts
         </div>
+    {state.succeeded ?
+    <div className="success-contact">
+        <p >Thanks for contacting me!</p>
+        <Link to="/">
+        <button className="btn ">back home</button>
+        </Link>
+
+    </div>
+          :
+
+
+  
        <div className="section-contacts">
         <div className="contacts-info">
 
@@ -32,7 +48,7 @@ function Contact(){
 
          </a>
        </div>
-        <form action="https://formspree.io/f/xayawzkq" method="post" className="form-container">
+        <form  onSubmit={handleSubmit} className="form-container">
           <div className="form-control-container">
               <label htmlFor="">name</label>
           <input type="text" name="name" id="" className="form-input" placeholder="enter your name"/>
@@ -46,12 +62,13 @@ function Contact(){
           <textarea name="" id="" cols="30" rows="10" className="form-control" placeholder="type your message..."></textarea>
           </div>
           <div className="form-control-container">
-              <button type="submit" className="submit-btn btn">send</button>
+              <button type="submit" disabled={state.submitting} className="submit-btn btn">send</button>
           </div>
 
         </form>
 
        </div>
+}
       </section>
     );
    }

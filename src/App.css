@@ -621,3 +621,10 @@ flex-direction: column;
   height: 10rem;
   font-size: 1rem;
 }
+.success-contact{
+  width: 30rem;
+  margin: 10rem auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
