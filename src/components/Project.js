@@ -1,37 +1,49 @@
-import {projects} from './info'
-function Projects(){
+import {useState, useEffect} from 'react';
+import axios from 'react'
+import {FaPhp, FaReact, FaNodeJs, FaHtml5, FaCss3, FaGithub, FaLink} from 'react-icons/fa';
+import {SiJavascript} from 'react-icons/si'
+import {Link} from "react-router-dom"
+import {useGlobalContext} from "../context.jsx"
+import {project} from './info'
 
+
+
+function Project(){
+  const  {projectId, handleProject} = useGlobalContext()
+  const {project_url, name, img,github,stack, description,} = project.filter((item)=> item.id === projectId)[0]
+console.log(project_url, img,stack);
   return (
-   <section className="section-projects">
-      <div className="project-section-title">
-        <div className="section-title project-title">
-          <h3>all projects</h3>
-          <div className="underline"></div>
-        </div>
-        <div className="filer-form">
-         <h5>Filter by</h5>
-         <select name="course" id="">
-          <option value="ALL">ALL</option>
-          <option value="HTMLCSS">HTML & CSS</option>
-          <option value="JAVASCRIPT">JAVASCRIPT</option>
-          <option value="PHP">PHP</option>
-          <option value="NODEJS">NODE JS</option>
-         </select>
-        </div>
-      </div>
-      <div className="project-card-container">
-       {projects.map((project, index)=>{
-            return(
-       
-       <article className="single-project" key={index}>
-        <h1>{project.title}</h1>
-       </article>
-            )
-       })
-       }
-      </div>
+   <section className="about-section">
+     <div className="section-title">
+       {name}
+     </div>
+    <div className="section-container project-container project-one">
+       <div className="single-project project-desc">
+          <p>{description}</p>
+       </div>
+       <div className="single-project single-proj">
+        
+           <div className="img-container">
+            <img src={img} alt={name}/>
+           </div>
+           <h5>
+              <a target="_blank" className="project-link" href={github}>{name}</a></h5>
+           <div className="other-info">
+               <div className="stack-dettails">
+                {stack.map(item=> item)}
+               </div>
+               <div className="project-links">
+               <a target="_blank" className="project-link" href={github}>
+                   
+               <FaGithub className="project-icon"/> <FaLink className="project-icon"/>
+                            </a>
+               </div>
+           </div>
+       </div>
+
+    </div>
    </section>
   );
  }
 
- export default Projects;
+ export default Project;

@@ -2,10 +2,13 @@ import {useState, useEffect} from 'react';
 import axios from 'react'
 import {FaPhp, FaReact, FaNodeJs, FaHtml5, FaCss3, FaGithub, FaLink} from 'react-icons/fa';
 import {SiJavascript} from 'react-icons/si'
+import {Link} from "react-router-dom"
+import {useGlobalContext} from "../context.jsx"
 
- function Projects(){
 
-  
+function Projects(){
+const  {projectId, handleProject} = useGlobalContext()
+console.log(projectId);
   return (
    <section className="about-section">
      <div className="section-title">
@@ -13,12 +16,14 @@ import {SiJavascript} from 'react-icons/si'
      </div>
     <div className="section-container project-container">
        <div className="single-project">
+       <Link to="/project" onClick={()=>handleProject(1)}>
            <div className="img-container">
             <img src="/projects/result.png" alt=""/>
            </div>
+        </Link>
            <h5>
               <a target="_blank" className="project-link" href="https://github.com/faraamcode/management_system">
-       result managment system            </a></h5>
+        result managment system            </a></h5>
            <div className="other-info">
                <div className="stack-dettails">
                 <FaNodeJs className="stack-icon"/> <FaReact className="stack-icon"/>
@@ -32,9 +37,11 @@ import {SiJavascript} from 'react-icons/si'
            </div>
        </div>
        <div className="single-project">
+           <Link to="/project" onClick={()=>handleProject(2)}>
            <div className="img-container">
             <img src="/projects/cbt.png" alt=""/>
            </div>
+           </Link>
            <h5>
            <a target="_blank" className="project-link" href="https://github.com/faraamcode/cbt">computer based test system(CBT)          </a></h5>
            <div className="other-info">
@@ -50,9 +57,11 @@ import {SiJavascript} from 'react-icons/si'
            </div>
        </div>
        <div className="single-project">
+       <Link to="/project" onClick={()=>handleProject(3)}>
            <div className="img-container">
             <img src="/projects/onlineschool.png" alt=""/>
            </div>
+        </Link>
            <h5>
            <a target="_blank" className="project-link" href="https://roemichsschools.online">online school          </a></h5>
            <div className="other-info">
@@ -68,9 +77,11 @@ import {SiJavascript} from 'react-icons/si'
            </div>
        </div>
        <div className="single-project">
+           <Link to="/project" onClick={()=>handleProject(4)}> 
            <div className="img-container">
             <img src="/projects/portfolio.png" alt=""/>
            </div>
+           </Link>
            <h5>
            <a target="_blank" className="project-link" href="https://github.com/faraamcode/cbt">portfolio          </a></h5>
           

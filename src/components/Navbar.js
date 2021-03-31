@@ -49,14 +49,14 @@ const closeSidebar = ()=>{
         <FaTimes className="close-btn" onClick={closeSidebar}/>
      
     <ul className="sidebar-links">
-      <Link to="/about" >
-      <li className=""><FiUser className="navbar-icon"/>about</li>
+      <Link to="/about" onClick={closeSidebar} >
+      <li className=""><FiUser className="navbar-icon" />about</li>
       </Link>
-      <Link to="/" className="link-route">
-      <li className="link"> <GrProjects className="navbar-icon"/>projects</li>
+      <Link to="/projects" className="link-route" onClick={closeSidebar}>
+      <li className="link"> <GrProjects className="navbar-icon" />projects</li>
       </Link>
-      <Link to="/" className="link-route">
-      <li className=""><AiFillContacts className="navbar-icon"/>contact me</li>
+      <Link to="/contact" className="link-route" onClick={closeSidebar}>
+      <li className=""><AiFillContacts className="navbar-icon" />contact me</li>
       </Link>
      </ul>
     </div>
