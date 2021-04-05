@@ -1,5 +1,6 @@
  import {useState, useEffect} from 'react'
  import {info} from './info'; 
+ import {Link} from 'react-router-dom'
  function Home(){
 const github = 'https://api.github.com/users/faraamcode';
 const [userImage, setUserImage] = useState("");
@@ -19,15 +20,25 @@ const getUser = async()=>{
        <h2>Hello, I am</h2>
        <h1>Ibrahim abdulrasaq</h1>
        <article className="personal-info">
-        <p>{more ? info : info.slice(0, 100)}</p>
-        <button onClick = {()=> setMore(!more)} className="btn">{more ? "hide" : "readmore"}</button>
+        <h2>A full stack web developer</h2>
+        <Link to="/contact"><button  className="btn hire-btn">Hire me</button></Link>
        </article>
        <div className="social-links-container">
+         <a target= "_blank" href="https://github.com/faraamcode">
          <img src="/images/github.svg" class="social-icon-img" alt=""/>
+         </a>
+         <a target= "_blank" href="https://www.linkedin.com/in/ibrahim-abdulrasaq-761841199/">
          <img src="/images/linkedin.svg" class="social-icon-img" alt=""/>
+         </a>
+         <a target= "_blank" href="https://twitter.com/faraamcode">
          <img src="/images/twitter.svg" class="social-icon-img" alt=""/>
+         </a>
+         <a target= "_blank" href="https://web.facebook.com/ikayode2">
          <img src="/images/facebook.svg" class="social-icon-img" alt=""/>
+         </a>
+         <a target= "_blank" href="mailto: abdulrasaqalagbede@gmail.com">
          <img src="/images/gmail.svg" class="social-icon-img" alt=""/>
+         </a>
        </div>
      </div>
      <div className="picture-and-design-container">
